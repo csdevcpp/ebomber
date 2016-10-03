@@ -1,0 +1,28 @@
+ 
+	for(int k=n0-1; k<n0+m; k++)
+	{
+		 i=0;
+		 first = true;
+		 sigma = 1000;
+
+		 cout<<"\nn: "<<k;
+
+		 while(sigma>=eps)
+		 {
+			 for(int i=0; i<(n0+m); i++)
+			 {
+				  tmp[i] = polinom[i];
+			 }
+
+			 i++;
+			 get_V();
+
+			 for(int i=0; i<(n0+m); i++)
+			 {
+					polinom[i] += lambda()*V[i];
+
+
+			 }
+
+			 if(first) first=false;
+			 else sigma=get_sigma();
