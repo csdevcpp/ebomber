@@ -26,11 +26,3 @@
 
 			 if(first) first=false;
 			 else sigma=get_sigma();
-
-
-qwerqwe
-qw
-e
-qw
-e
-qweqeqe
